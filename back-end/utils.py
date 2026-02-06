@@ -63,7 +63,7 @@ def find_password_vigerene(vigerene_dict, message, password : str):
         "ción", "mente", "dad", "esta", "sobre"
     ]
             
-    df_rockyou = pd.read_csv("../rockyou-top100.txt",encoding="latin-1",sep="\t",header=None,names=['contraseñas'])
+    df_rockyou = pd.read_csv("./rockyou-top100.txt",encoding="latin-1",sep="\t",header=None,names=['contraseñas'])
 
     def check_password(passw : str):
         
