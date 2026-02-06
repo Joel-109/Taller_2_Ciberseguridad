@@ -1,0 +1,60 @@
+### GET
+GET http://127.0.0.1:8000/
+
+### POST
+POST http://127.0.0.1:8000/cesar/cipher/
+Content-Type: application/json
+
+{
+  "content": "MIGATOFAVORITO",
+  "password": 4
+}
+
+### POST
+POST http://127.0.0.1:8000/cesar/decipher/
+Content-Type: application/json
+
+{
+  "content": "qmkexsjezsvmxs",
+  "password": 4
+}
+
+### POST
+POST http://127.0.0.1:8000/cesar/decipher/
+Content-Type: application/json
+
+{
+  "content": "qmkexsjezsvmxs",
+  "password": null
+}
+
+### POST
+
+POST http://127.0.0.1:8000/vigerene/cipher/
+Content-Type: application/json
+
+{
+  "content": "migato",
+  "password": "mono"
+}
+
+### POST
+
+POST http://127.0.0.1:8000/vigerene/decipher/
+Content-Type: application/json
+
+{
+  "content": "ywtofc",
+  "password": "mono"
+}
+
+
+### POST
+
+POST http://127.0.0.1:8000/vigerene/decipher/
+Content-Type: application/json
+
+{
+  "content": "diehqsnlrjykkehzppjxt",
+  "password": null
+}
