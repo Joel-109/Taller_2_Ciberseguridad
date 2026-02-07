@@ -27,7 +27,7 @@ async def cipher_cesar_process(cesar_message : CesarMessage):
     response = cesar_cipher(message,password)
 
     return {
-        "ciphered_password": response
+        "ciphered_message": response
     }
 
 @app.post("/cesar/decipher/",response_model=DecipheredCesarResponse)

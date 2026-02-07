@@ -9,7 +9,7 @@ class CesarMessage(BaseModel):
     password : int | None = None
 
 class CipheredCesarResponse(BaseModel):
-    ciphered_password: str
+    ciphered_message: str
 
 class DecipheredCesarResponse(BaseModel):
     deciphered_message : str

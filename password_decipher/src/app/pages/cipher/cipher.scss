@@ -8,6 +8,8 @@
   align-items: center;
 }
 
+/* ---------- Títulos ---------- */
+
 h1 {
   font-size: 2.4rem;
   color: #273F4F;
@@ -20,6 +22,8 @@ h1 {
   opacity: 0.8;
   margin-bottom: 2.5rem;
 }
+
+/* ---------- Card principal ---------- */
 
 .cipher-card {
   background-color: #ffffff;
@@ -34,6 +38,8 @@ h1 {
   flex-direction: column;
   gap: 1.6rem;
 }
+
+/* ---------- Campos ---------- */
 
 .field {
   display: flex;
@@ -65,6 +71,8 @@ h1 {
   }
 }
 
+/* ---------- Botón ---------- */
+
 .action-btn {
   margin-top: 1rem;
 
@@ -89,9 +97,45 @@ h1 {
   }
 }
 
-/* Responsive */
+/* ---------- RESULTADOS ---------- */
+
+.result {
+  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 520px;
+
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.2rem;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+
+  h3 {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: #273F4F;
+  }
+
+  p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: #273F4F;
+    word-break: break-word;
+
+    strong {
+      color: #FE7743;
+    }
+  }
+}
+
+/* ---------- Responsive ---------- */
+
 @media (max-width: 480px) {
   .cipher-card {
     padding: 2rem 1.8rem;
+  }
+
+  .result {
+    padding: 1.8rem 1.6rem;
   }
 }

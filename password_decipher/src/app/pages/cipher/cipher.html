@@ -51,10 +51,35 @@
 
     <button
       class="action-btn"
-      (click)="captureData(action.value, method.value, text.value, key.value)">
+      (click)="captureData(action, method, text, key)">
       Ejecutar
     </button>
 
+  </div>
+
+  <!-- RESULTADOS -->
+  <div class="result" *ngIf="apiResult">
+    <h3>Resultado</h3>
+
+    <p *ngIf="apiResult.ciphered_message">
+      <strong>Mensaje cifrado:</strong>
+      {{ apiResult.ciphered_message }}
+    </p>
+
+    <p *ngIf="apiResult.ciphered_password">
+      <strong>Contraseña cifrada:</strong>
+      {{ apiResult.ciphered_password }}
+    </p>
+
+    <p *ngIf="apiResult.deciphered_message">
+      <strong>Mensaje descifrado:</strong>
+      {{ apiResult.deciphered_message }}
+    </p>
+
+    <p *ngIf="apiResult.deciphered_password">
+      <strong>Contraseña descifrada:</strong>
+      {{ apiResult.deciphered_password }}
+    </p>
   </div>
 
 </section>
