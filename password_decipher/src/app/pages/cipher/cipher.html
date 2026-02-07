@@ -1,0 +1,60 @@
+<section class="cipher">
+
+  <h1>Cifrado de contraseñas</h1>
+  <p class="subtitle">
+    Selecciona la acción, el método de cifrado e ingresa los datos necesarios.
+  </p>
+
+  <div class="cipher-card">
+
+    <!-- Acción -->
+    <div class="field">
+      <label for="action">Acción</label>
+      <select id="action" #action>
+        <option value="">Selecciona una acción</option>
+        <option value="cipher">Cifrar</option>
+        <option value="decipher">Descifrar</option>
+      </select>
+    </div>
+
+    <!-- Método -->
+    <div class="field">
+      <label for="method">Método de cifrado</label>
+      <select id="method" #method>
+        <option value="">Selecciona un método</option>
+        <option value="cesar">Cifrado César</option>
+        <option value="vigenere">Cifrado Vigenère</option>
+      </select>
+    </div>
+
+    <!-- Input texto -->
+    <div class="field">
+      <label for="text">Texto / contraseña</label>
+      <input
+        id="text"
+        type="text"
+        placeholder="Ingresa el texto"
+        #text
+      />
+    </div>
+
+    <!-- Input clave -->
+    <div class="field">
+      <label for="key">Clave</label>
+      <input
+        id="key"
+        type="text"
+        placeholder="Ingresa la clave"
+        #key
+      />
+    </div>
+
+    <button
+      class="action-btn"
+      (click)="captureData(action.value, method.value, text.value, key.value)">
+      Ejecutar
+    </button>
+
+  </div>
+
+</section>

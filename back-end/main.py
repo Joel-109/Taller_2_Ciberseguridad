@@ -3,9 +3,17 @@ from models import (CesarMessage,ViregeneMessage,CipheredCesarResponse,
                     DecipheredCesarResponse,DecipheredViregeneResponse,
                     CipheredViregeneResponse)
 from controller import cesar_cipher,cesar_decipher,cipher_vigerene,decipher_vigerene
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:4200"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def root():
